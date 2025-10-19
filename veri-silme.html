@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veri Silme Talebi - Halı Yıkama Otomasyon</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2C3E50;
+            text-align: center;
+            border-bottom: 3px solid #3498DB;
+            padding-bottom: 10px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #34495E;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        button {
+            background-color: #3498DB;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #2980B9;
+        }
+        .warning {
+            background-color: #FFF3CD;
+            border: 1px solid #FFEAA7;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Veri Silme Talebi</h1>
+        
+        <div class="warning">
+            <strong>⚠️ Önemli:</strong> Bu işlem geri alınamaz. Hesabınız ve tüm verileriniz kalıcı olarak silinecektir.
+        </div>
+
+        <h2>Veri Silme Süreci</h2>
+        <p>KVKK kapsamında kişisel verilerinizin silinmesini talep edebilirsiniz. Bu işlem aşağıdaki adımları içerir:</p>
+        
+        <ul>
+            <li>Hesap bilgilerinizin silinmesi</li>
+            <li>Sipariş geçmişinizin silinmesi</li>
+            <li>Müşteri bilgilerinizin silinmesi</li>
+            <li>Tüm işletme verilerinizin silinmesi</li>
+        </ul>
+
+        <h2>Talep Formu</h2>
+        <form action="mailto:gizlilik@halıyıkamaotomasyon.com" method="post" enctype="text/plain">
+            <div class="form-group">
+                <label for="email">E-posta Adresiniz:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Telefon Numaranız:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="reason">Silme Sebebi:</label>
+                <textarea id="reason" name="reason" rows="4" placeholder="Verilerinizin silinme sebebini belirtiniz..."></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" required> 
+                    Verilerimin kalıcı olarak silineceğini ve bu işlemin geri alınamayacağını anlıyorum.
+                </label>
+            </div>
+            
+            <button type="submit">Veri Silme Talebini Gönder</button>
+        </form>
+
+        <h2>Alternatif İletişim</h2>
+        <p>Form kullanmak istemiyorsanız:</p>
+        <p><strong>E-posta:</strong> haliyikamaotomasyonu@outlook.com</p>
+        <p><strong>Konu:</strong> Veri Silme Talebi</p>
+        
+        <h2>Süreç</h2>
+        <ol>
+            <li>Talebinizi aldıktan sonra 24 saat içinde onay e-postası göndeririz</li>
+            <li>Kimlik doğrulama için ek bilgi isteyebiliriz</li>
+            <li>Doğrulama sonrası 7 gün içinde verileriniz silinir</li>
+            <li>Silme işlemi tamamlandığında bilgilendirilirsiniz</li>
+        </ol>
+    </div>
+</body>
+</html>
