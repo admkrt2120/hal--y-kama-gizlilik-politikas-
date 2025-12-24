@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veri Silme Talebi - Halı Yıkama Otomasyon</title>
+    <title>Hesap Silme - Halı Yıkama Otomasyon</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -26,41 +26,34 @@
             border-bottom: 3px solid #3498DB;
             padding-bottom: 10px;
         }
-        .form-group {
-            margin-bottom: 20px;
-        }
-        label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
+        h2 {
             color: #34495E;
+            margin-top: 30px;
         }
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 14px;
-            box-sizing: border-box;
-        }
-        button {
-            background-color: #3498DB;
-            color: white;
-            padding: 12px 24px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        button:hover {
-            background-color: #2980B9;
+        .highlight {
+            background-color: #E8F4FD;
+            padding: 15px;
+            border-left: 4px solid #3498DB;
+            margin: 20px 0;
         }
         .warning {
             background-color: #FFF3CD;
-            border: 1px solid #FFEAA7;
             padding: 15px;
+            border-left: 4px solid #FFC107;
+            margin: 20px 0;
+        }
+        .steps {
+            background-color: #F8F9FA;
+            padding: 20px;
             border-radius: 5px;
-            margin-bottom: 20px;
+            margin: 20px 0;
+        }
+        .steps ol {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .steps li {
+            margin: 10px 0;
         }
         .contact-info {
             background-color: #F8F9FA;
@@ -68,77 +61,87 @@
             border-radius: 5px;
             margin-top: 30px;
         }
+        .email-link {
+            color: #3498DB;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .email-link:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Veri Silme Talebi</h1>
+        <h1>Hesap ve Veri Silme Talebi</h1>
         
-        <div class="warning">
-            <strong>⚠️ Önemli:</strong> Bu işlem geri alınamaz. Hesabınız ve tüm verileriniz kalıcı olarak silinecektir.
+        <div class="highlight">
+            <strong>Halı Yıkama Otomasyon</strong> uygulamasından hesabınızı ve tüm verilerinizi silmek istiyorsanız, aşağıdaki adımları izleyebilirsiniz.
         </div>
 
-        <h2>Veri Silme Süreci</h2>
-        <p>KVKK kapsamında kişisel verilerinizin silinmesini talep edebilirsiniz. Bu işlem aşağıdaki adımları içerir:</p>
-        
+        <div class="warning">
+            <strong>⚠️ Uyarı:</strong> Hesabınızın silinmesi kalıcıdır ve geri alınamaz. Tüm sipariş geçmişiniz, müşteri bilgileri ve diğer tüm verileriniz kalıcı olarak silinecektir.
+        </div>
+
+        <h2>Hesap Silme Adımları</h2>
+        <div class="steps">
+            <ol>
+                <li><strong>E-posta Gönderin:</strong> Hesap silme talebinizi <a href="mailto:haliyikamaotomasyonu@outlook.com?subject=Hesap Silme Talebi" class="email-link">haliyikamaotomasyonu@outlook.com</a> adresine gönderin.</li>
+                <li><strong>E-posta Konusu:</strong> E-postanızın konusuna "Hesap Silme Talebi" yazın.</li>
+                <li><strong>Doğrulama:</strong> E-postanızda kullandığınız e-posta adresini ve uygulama içindeki adınızı belirtin.</li>
+                <li><strong>Onay:</strong> Hesap silme işleminin geri alınamaz olduğunu onaylayın.</li>
+                <li><strong>İşlem Süresi:</strong> Talebiniz en geç 7 iş günü içinde işleme alınacaktır.</li>
+            </ol>
+        </div>
+
+        <h2>Silinecek Veriler</h2>
+        <p>Aşağıdaki veriler kalıcı olarak silinecektir:</p>
         <ul>
-            <li>Hesap bilgilerinizin silinmesi</li>
-            <li>Sipariş geçmişinizin silinmesi</li>
-            <li>Müşteri bilgilerinizin silinmesi</li>
-            <li>Tüm işletme verilerinizin silinmesi</li>
+            <li>Kullanıcı hesabı bilgileri (e-posta, ad soyad)</li>
+            <li>Tüm sipariş kayıtları</li>
+            <li>Müşteri bilgileri</li>
+            <li>Şirket bilgileri</li>
+            <li>Yüklenen fotoğraf ve videolar</li>
+            <li>İstatistik ve raporlar</li>
+            <li>Abonelik bilgileri</li>
+            <li>Tüm uygulama içi veriler</li>
         </ul>
 
-        <h2>Talep Formu</h2>
-        <form action="mailto:haliyikamaotomasyonu@outlook.com" method="post" enctype="text/plain">
-            <input type="hidden" name="subject" value="Veri Silme Talebi">
-            
-            <div class="form-group">
-                <label for="email">E-posta Adresiniz:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="phone">Telefon Numaranız:</label>
-                <input type="tel" id="phone" name="phone" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="reason">Silme Sebebi:</label>
-                <textarea id="reason" name="reason" rows="4" placeholder="Verilerinizin silinme sebebini belirtiniz..."></textarea>
-            </div>
-            
-            <div class="form-group">
-                <label>
-                    <input type="checkbox" required> 
-                    Verilerimin kalıcı olarak silineceğini ve bu işlemin geri alınamayacağını anlıyorum.
-                </label>
-            </div>
-            
-            <button type="submit">Veri Silme Talebini Gönder</button>
-        </form>
-
-        <div class="contact-info">
-            <h2>Alternatif İletişim</h2>
-            <p>Form kullanmak istemiyorsanız:</p>
-            <p><strong>E-posta:</strong> haliyikamaotomasyonu@outlook.com</p>
-            <p><strong>Konu:</strong> Veri Silme Talebi</p>
-            
-            <h3>Gönderilecek Bilgiler:</h3>
-            <ul>
-                <li>E-posta adresiniz</li>
-                <li>Telefon numaranız</li>
-                <li>Silme sebebi</li>
-                <li>"Verilerimin silinmesini talep ediyorum" onayı</li>
-            </ul>
+        <h2>Alternatif Yöntem</h2>
+        <p>Uygulama içinden hesabınızı silmek için:</p>
+        <div class="steps">
+            <ol>
+                <li>Uygulamayı açın</li>
+                <li>Profil ayarlarına gidin</li>
+                <li>"Hesabımı Sil" seçeneğini bulun</li>
+                <li>Onaylayın</li>
+            </ol>
         </div>
 
-        <h2>Süreç</h2>
-        <ol>
-            <li>Talebinizi aldıktan sonra 24 saat içinde onay e-postası göndeririz</li>
-            <li>Kimlik doğrulama için ek bilgi isteyebiliriz</li>
-            <li>Doğrulama sonrası 7 gün içinde verileriniz silinir</li>
-            <li>Silme işlemi tamamlandığında bilgilendirilirsiniz</li>
-        </ol>
+        <h2>Veri Saklama</h2>
+        <p>Yasal yükümlülükler gereği, bazı veriler belirli bir süre saklanabilir:</p>
+        <ul>
+            <li><strong>Muhasebe Kayıtları:</strong> Yasal zorunluluklar gereği muhasebe kayıtları 10 yıl saklanabilir.</li>
+            <li><strong>İşlem Logları:</strong> Güvenlik amacıyla işlem logları 1 yıl saklanabilir.</li>
+        </ul>
+        <p>Ancak bu veriler kişisel olarak tanımlanabilir formatta saklanmaz.</p>
+
+        <h2>İşlem Sonrası</h2>
+        <p>Hesabınız silindikten sonra:</p>
+        <ul>
+            <li>Uygulamaya tekrar giriş yapamayacaksınız</li>
+            <li>Tüm verileriniz kalıcı olarak silinecek</li>
+            <li>Aynı e-posta adresi ile yeni hesap oluşturabilirsiniz</li>
+        </ul>
+
+        <div class="contact-info">
+            <h2>İletişim</h2>
+            <p>Hesap silme talebi veya sorularınız için:</p>
+            <p><strong>E-posta:</strong> <a href="mailto:haliyikamaotomasyonu@outlook.com?subject=Hesap Silme Talebi" class="email-link">haliyikamaotomasyonu@outlook.com</a></p>
+            <p><strong>Uygulama:</strong> Halı Yıkama Otomasyon</p>
+            <p><strong>Yanıt Süresi:</strong> En geç 7 iş günü içinde yanıtlanır</p>
+        </div>
     </div>
 </body>
 </html>
+
